@@ -30,7 +30,11 @@ public class hello {
 			    fenetre.setVisible(true);
 			}
 		}
+		System.out.println("debut des fenetres");
+		System.out.println("milieu des fenetres");
+		System.out.println("milieu des fenetres");
 		System.out.println("fin des fenetres");
+		
 	}
 
 }
