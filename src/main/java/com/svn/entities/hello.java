@@ -30,7 +30,7 @@ public class hello {
 			    fenetre.setVisible(true);
 			}
 		}
-		
+		System.out.println("fin des fenetres");
 	}
 
 }
