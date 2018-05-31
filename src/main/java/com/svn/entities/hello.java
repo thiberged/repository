@@ -2,6 +2,7 @@ package main.java.com.svn.entities;
 
 import java.awt.Color;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -9,12 +10,14 @@ public class hello {
 
 	public static void main(String[] args) {
 		
-		for(int i=0;i<20;i++){
-			for(int j=0;j<20;j++) {
+		for(int i=0;i<2;i++){
+			for(int j=0;j<2;j++) {
 				
 				JFrame fenetre = new JFrame();
-			    fenetre.setSize(200, 200);
-			    fenetre.setTitle("MOUAHAHAHAHAHAAHAH");
+			    fenetre.setSize((int)(Math.random() * 800), (int)(Math.random() *  500));
+			    fenetre.setUndecorated(true);
+			    //fenetre.setTitle("MOUAHAHAHAHAHAAHAH");
+			    fenetre.setIconImage(new ImageIcon("image.gif").getImage());
 			    fenetre.setLocation((int)(Math.random() * 1600), (int)(Math.random() *  1000)); 
 			    
 			    JPanel pan = new JPanel();
@@ -27,6 +30,7 @@ public class hello {
 			    fenetre.setVisible(true);
 			}
 		}
+		
 	}
 
 }
